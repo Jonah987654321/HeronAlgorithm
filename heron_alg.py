@@ -23,15 +23,12 @@ while accuracy_int is False or int(x) <= 0:
     accuracy = isnumber(x, "int")
 x = int(x)
 a = float(num)
-print(f"Side length a: {a}")
 num = float(num)
 for r in range(1, x, 1):
     a_last = float(a)
     a = (a_last + (zahl / a_last)) / 2
     if a == a_last:
         break
-    else:
-        print(f"Side length a: {a}")
 y = a*a
 approximation = abs(y-num)/num
 approximation = approximation*100
